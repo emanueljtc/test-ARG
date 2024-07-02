@@ -1,0 +1,113 @@
+.about_me {
+    width: 100%;
+    height: calc(100vh - 7rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_me_description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.about_me_description h4 {
+    color: var(--gray);
+}
+
+.description_information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 1.5rem;
+    border-top: 4px solid var(--red-pop);
+    padding-top: 1rem;
+}
+
+.description_information_info_extra {
+    color: var(--gray);
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: display 2s,
+        visibility 2s,
+        opacity 2s;
+}
+
+.about_me_description_interests {
+    padding-left: 1rem;
+}
+
+.about_me_description_interests li {
+    color: var(--black);
+    list-style: circle;
+    font-weight: 600;
+}
+
+.about_me_user_image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_me_user_image img {
+    width: auto;
+    height: 60vh;
+}
+
+.see_more {
+    color: var(--red-pop);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: text-decoration 2s, color 2s;
+    -webkit-transition: text-decoration 2s, color 2s;
+    -moz-transition: text-decoration 2s, color 2s;
+    -ms-transition: text-decoration 2s, color 2s;
+    -o-transition: text-decoration 2s, color 2s;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: var(--yellow-star)
+    }
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .about_me {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .about_me_description {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+
+    .description_information_info_extra {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .about_me_user_image img {
+        height: 70%;
+    }
+}

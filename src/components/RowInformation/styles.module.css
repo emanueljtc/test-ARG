@@ -1,0 +1,13 @@
+.row_information {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.row_information span {
+    color: var(--gray);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
