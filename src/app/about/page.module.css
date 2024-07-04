@@ -12,14 +12,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
-}
-
-
-
-.about_me_description h4 {
-    color: var(--gray);
 }
 
 .description_information {
@@ -32,7 +26,13 @@
     font-size: 1.5rem;
     border-top: 4px solid var(--red-pop);
     padding-top: 1rem;
+
+    & p {
+        font-size: 1.2rem;
+    }
 }
+
+
 
 .description_information_info_extra {
     color: var(--gray);
@@ -120,7 +120,6 @@
         justify-content: flex-start;
         align-items: flex-start;
     }
-
 
     .description_information_info_extra {
         display: block;

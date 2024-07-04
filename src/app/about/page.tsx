@@ -43,7 +43,7 @@ export default function AboutPage() {
             {name} {description}
           </p>
           <Title variant="md" color="gray">
-            My Interests are...
+            My Interests 
           </Title>
           <ul className={styles.about_me_description_interests}>
             {interests?.map((interest: string) => (
