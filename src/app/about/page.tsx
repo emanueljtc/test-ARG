@@ -1,5 +1,4 @@
 'use client';
-import { useEffect } from 'react';
 import { useUserContext } from '@/context/UserContext';
 import styles from './page.module.css';
 import Image from 'next/image';
@@ -8,8 +7,6 @@ import Link from 'next/link';
 import Loading from './loading';
 export default function AboutPage() {
   const { user } = useUserContext();
-
- 
 
   if (!user) return <Loading />;
 
