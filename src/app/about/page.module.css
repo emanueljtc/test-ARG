@@ -65,8 +65,26 @@
 }
 
 .about_me_user_image img {
-    width: auto;
-    height: 60vh;
+    width: 60%;
+    height: auto;
+    image-rendering: auto;
+    filter: blur(2px);
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    -webkit-filter: blur(2px);
+    transition: transform 2s;
+
+    &:hover {
+        transform: perspective(1000px) rotateY(180deg);
+        -webkit-transform: perspective();
+        -moz-transform: perspective();
+        -ms-transform: perspective();
+        -o-transform: perspective();
+        cursor: pointer;
+    }
 }
 
 .see_more {
@@ -83,9 +101,12 @@
     &:hover {
         cursor: pointer;
         text-decoration: underline;
-        color: var(--yellow-star)
+        color: var(--yellow-star);
+        transform: scale(1.1);
     }
 }
+
+
 
 
 
@@ -108,6 +129,7 @@
     }
 
     .about_me_user_image img {
+        width: auto;
         height: 70%;
     }
 }

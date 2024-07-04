@@ -1,13 +1,15 @@
-import { Title } from '@/components';
+import { ContainerCenter, Title } from '@/components';
+import Link from 'next/link';
 import React from 'react';
 
 const notFound = () => {
   return (
-    <div>
-      <Title variant="md" fontWeight="400" color="red-pop">
-        Page not found...
+    <ContainerCenter>
+      <Title variant="md" fontWeight="600">
+        Page not found
       </Title>
-    </div>
+      <Link href="/about">Go home</Link>
+    </ContainerCenter>
   );
 };
 

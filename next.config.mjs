@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['xsgames.co', 'img.freepik.com'],
+    domains: ['randomuser.me', 'img.freepik.com'],
   },
 };
 
 export default nextConfig;
+
 

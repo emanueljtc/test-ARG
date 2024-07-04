@@ -4,19 +4,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useUserContext } from '@/context/UserContext';
 const NavBar = () => {
-  const user = useUserContext();
-  const { name, avatar } = user || {};
+  const { user } = useUserContext();
+  if (!user) return;
+  const { name, avatar } = user;
 
   return (
     <div className={styles.header}>
       <div className={styles.header_profile}>
-        <Image
-          src={avatar || 'https://xsgames.co/randomusers/avatar.php?g=male'}
-          alt="logo"
-          width={100}
-          height={100}
-        />
-        <h1 className={styles.header_title}>{name ? name : 'Milei'}</h1>
+        <Image src={avatar} alt="logo" width={100} height={100} />
+        <h1 className={styles.header_title}>{name}</h1>
       </div>
       <label htmlFor="menu" tabIndex={0} className={styles.menu_button_label}>
         🍔

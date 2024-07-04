@@ -5,11 +5,11 @@ import styles from './page.module.css';
 import Image from 'next/image';
 import { RowInformation, Title } from '@/components';
 import Link from 'next/link';
-import Loading from './loading';
+import Loading from '@/app/about/loading';
 export default function AboutPage() {
-  const { user } = useUserContext();
+  const user  = useUserContext();
 
- 
+  
 
   if (!user) return <Loading />;
 

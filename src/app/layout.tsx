@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import 'animate.css';
 import './globals.css';
 import { NavBar } from '@/components';
 import { UserWrapper } from '@/context/UserContext';
@@ -21,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <UserWrapper>
           <NavBar />
-          <div className="container">{children}</div>
+          <main className="container">{children}</main>
         </UserWrapper>
       </body>
     </html>
