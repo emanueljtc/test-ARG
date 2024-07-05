@@ -1,4 +1,5 @@
 'use client';
+import React from 'react';
 import { useUserContext } from '@/context/UserContext';
 import styles from './page.module.css';
 import Image from 'next/image';
@@ -43,7 +44,7 @@ export default function AboutPage() {
             {name} {description}
           </p>
           <Title variant="md" color="gray">
-            My Interests 
+            My Interests
           </Title>
           <ul className={styles.about_me_description_interests}>
             {interests?.map((interest: string) => (
