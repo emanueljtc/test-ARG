@@ -1,8 +1,9 @@
 'use client';
-import styles from './styles.module.css';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useUserContext } from '@/context/UserContext';
+import styles from './styles.module.css';
 const NavBar = () => {
   const { user } = useUserContext();
   if (!user) return;
